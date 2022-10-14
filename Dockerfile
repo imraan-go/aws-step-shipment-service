@@ -6,6 +6,6 @@ COPY * ./
 COPY config.env ./
 COPY *.crt ./
 COPY *.key ./
-EXPOSE 4003/tcp
-EXPOSE 5003/tcp
+EXPOSE 2001/tcp
+EXPOSE 2101/tcp
 ENTRYPOINT ["/aws-step-shipment-service"]
